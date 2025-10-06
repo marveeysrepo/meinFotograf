@@ -13,6 +13,9 @@ The website is designed to be easily deployed and customized.
 * __Contact Form:__ A simple form to allow visitors contact me
 * __Clean code:__ Codes are seperated intro different file, making it easy to manage and share.
 * __Comments:__ Comments are seamlessly used to give instructions
+* __Dark Mode:__ Dark mode toggle is added for user experience
+* __Reponsive nav:__ Navigation adjust well for mobile device.
+* __Scroll to top button:__ Added to aid user navigations on the page
 
 ## How to use
 
