@@ -4,20 +4,10 @@ const modalImg = document.querySelector("#modalImg");
 const imgGallery = document.querySelectorAll(".imageGallery img");
 const themetoggle = document.querySelector("#themeToggle");
 const body = document.documentElement;
+const nav = document.querySelector("nav");
+const menuBtn = document.querySelector("#menuBtn");
 
-/* const currentTheme = localStorage.getItem("theme");
- if ( currentTheme) {
-    body.classList.add(currentTheme);
-};
- themetoggle.addEventListener("click", function () { body.classList.toggle("darkMode")
-    if (body.classList.contains("darkMode")) {
-localStorage.setItem("theme", "dark mode")
-    } else {
-        localStorage.setItem("theme", "")
-    }
-}); 
- 
- */
+
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme) {
     body.classList.add(currentTheme);
@@ -61,5 +51,14 @@ window.addEventListener("scroll", () => {
     } else {        scrollBtn.classList.remove("show")
 }
 });
-
- 
+/* Toggle nav menu and close nav on click of nav children */
+menuBtn.addEventListener("click", () => {
+    nav.classList.toggle("open")
+})
+const navLinks = document.querySelectorAll("nav a");
+navLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+        nav.classList.remove("open");
+        console.log(e.link);
+       })
+})
