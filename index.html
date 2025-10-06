@@ -7,16 +7,17 @@
         <link rel="stylesheet" href="style.css">
         <title>Mein Fotograf</title>
     </head>
-    <body>
+    <body id="body" >
         <header>
             
                 <div class="container">
-                    <h1>Marveey Fotograf</h1>
+                    <h1> John Doe Photograf</h1>
                     <nav>
                     <a href="#portfolio" class="">portfolio</a>
                     <a href="#about" class="">about</a>
                     <a href="#contact" class="">contact</a>
                      </nav>
+                     <button id="themeToggle">&star;</button>
                 </div>
         </header>
         <main>
@@ -33,12 +34,31 @@
                 <div class="container">
                     <h2>My portfolio</h2>
                     <div class="imageGallery">
+                        <figure>
                         <img src="images/landscape.jpg" alt="Landscape Photo" loading="lazy">
+                            <figcaption>Lorem ipsum dolor sit.</figcaption>
+                        </figure>
+                        <figure>
                         <img src="images/mountain.jpg" alt="Mountain view Photo" loading="lazy">
+                            <figcaption>Lorem ipsum dolor sit.</figcaption>
+                        </figure>
+                        <figure>
                         <img src="images/event.jpg" alt="conference Event Photo" loading="lazy">
+                            <figcaption>Lorem ipsum dolor sit.</figcaption>
+                        </figure>
+                        <figure>
                         <img src="images/architecture.jpg" alt="Architecture Photo" loading="lazy">
+                            <figcaption>Lorem ipsum dolor sit</figcaption>
+                        </figure>
+                        <figure>
                         <img src="images/people.jpg" alt="People walking Photo" loading="lazy">
+                            <figcaption>Lorem ipsum dolor sit
+                            </figcaption>
+                        </figure>
+                        <figure>
                         <img src="images/sea-bird-5003667_640.jpg" alt="Sea bird" loading="lazy">
+                            <figcaption>Lorem ipsum dolor sit.</figcaption>
+                        </figure>
                     </div>
                 </div>
              </section>
@@ -55,7 +75,7 @@
                         <img src="images/profilepic.jpg" alt="My Profile Picture" loading="lazy">
                         <div class="textContent">
                             <p>Hi
-, I'm Marveey, a professional photographer with over 10 years of experience in capturing the beauty of the world through my lens. My passion for photography drives me to create stunning images that tell a story and evoke emotions. Whether it's landscapes, portraits, or events, I strive to deliver high-quality work that exceeds my clients' expectations. Let's work together to create something beautiful!
+, I'm John Doe, a professional photographer with over 10 years of experience in capturing the beauty of the world through my lens. My passion for photography drives me to create stunning images that tell a story and evoke emotions. Whether it's landscapes, portraits, or events, I strive to deliver high-quality work that exceeds my clients' expectations. Let's work together to create something beautiful!
                             </p>
                         </div>
                     </div>
@@ -64,8 +84,8 @@
              <!-- Contact me information -->
               <section id="contact" class="contact">
                 <div class="container">
-                    <h2>Let's connect</h2>
-                    <p>
+                    <h2 class="contactH2">Let's connect</h2>
+                    <p class="contactText">
                         I would love to hear from you! whether you are interested in photograpy, learning, photoshoots, or just want to say hello, feel free to reach out.
                     </p>
                     <!-- contact form -->
@@ -86,9 +106,11 @@
 </form>
                 </div>
               </section>
+              <a href="#body" class="topLink">&uArr;</a>
              <footer>
                 <div class="container">
-                    <p> &copy; Marveey 2025. All Rights Reserved.</p>
+                    
+                    <p> &copy; JD 2025. All Rights Reserved.</p>
                 </div>
              </footer>
         </main>

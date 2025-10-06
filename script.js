@@ -2,6 +2,35 @@ const exitModal = document.querySelector("#closeBtn");
 const modalBox = document.querySelector("#modalBox");
 const modalImg = document.querySelector("#modalImg");
 const imgGallery = document.querySelectorAll(".imageGallery img");
+const themetoggle = document.querySelector("#themeToggle");
+const body = document.documentElement;
+
+/* const currentTheme = localStorage.getItem("theme");
+ if ( currentTheme) {
+    body.classList.add(currentTheme);
+};
+ themetoggle.addEventListener("click", function () { body.classList.toggle("darkMode")
+    if (body.classList.contains("darkMode")) {
+localStorage.setItem("theme", "dark mode")
+    } else {
+        localStorage.setItem("theme", "")
+    }
+}); 
+ 
+ */
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme) {
+    body.classList.add(currentTheme);
+};
+
+themetoggle.addEventListener("click", () => {
+    body.classList.toggle("darkMode");
+    if (body.classList.contains("darkMode")) {
+        localStorage.setItem("theme", "darkMode")
+    } else {localStorage.setItem("theme", "")
+}
+})
+
 //loop around all images
 //add click event to each image
 // update modal box image src & alt, with clicked img src & alt
@@ -23,3 +52,14 @@ window.addEventListener("click", (event) => {
         modalBox.style.display = "none";
     }
 });
+
+window.addEventListener("scroll", () => {
+    const scrollHeight = window.pageYOffset;
+    const scrollBtn = document.querySelector(".topLink");
+    if (scrollHeight > 500) {
+        scrollBtn.classList.add("show")
+    } else {        scrollBtn.classList.remove("show")
+}
+});
+
+ 
